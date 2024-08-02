@@ -22,6 +22,7 @@ This project is licensed under the MIT License.
 
 ## Table of Contents
 - [Installation](#installation)
+- [Input Dataset](#input-dataset)
 - [Training the Model](#training-the-model)
 - [Visualizing Training Progress](#visualizing-training-progress)
 - [Running the Demo](#running-the-demo)
@@ -33,6 +34,15 @@ Before training the model, ensure you have all necessary dependencies installed.
 ```bash
 pip install -r requirements.txt
 ```
+
+## Input Dataset
+This model uses an SQLite3 database by default, requiring two columns:
+`title` and `code` inside the `snippets` table. You can change these default settings in the `DataBaseConfiguration` enum in `GlobalVariables.py` if you are using a different format.
+A sample image of the required dataset structure is attached.
+
+<a href = "Images/database_samples.png">
+  <img src = "Images/database_samples.png"/>
+</a>
 
 ## Training the Model
 To train the JaraConverse model, execute the following command:
